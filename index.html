@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Overlay_Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <script src = "bodymovin.js"> </script>
+
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+
+	   <style type="text/css">
+         #bodymovin{
+              background-color: black;
+              width:60%;
+              height:60%;
+              display:block;
+              overflow: hidden;
+              transform: translate3d(0,0,0);
+              margin: auto;
+          }
+	  </style>
+	</head>
+
+	<body>
+       <div id="bodymovin"></div>
+
+                  <!--- Script for BodyMovin file-->
+                  <script>
+                      var anim;
+                      var elem = document.getElementById('bodymovin')
+                      var animData = {
+                          container: elem,
+                          renderer: 'svg',
+                          loop: true,
+                          autoplay: true,
+                          rendererSettings: {
+                              progressiveLoad:false
+                          },
+                          path: '1.json'
+                      };
+                  </script> 
+	</body>
+</html>
