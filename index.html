@@ -9,9 +9,9 @@
 
 	<style type="text/css">
          #bodymovin{
-              background-color: black;
-              width:60%;
-              height:60%;
+              background-color: white;
+              width: auto;
+              height: auto;
               display:block;
               overflow: hidden;
               transform: translate3d(0,0,0);
@@ -37,6 +37,8 @@
                           },
                           path: 'data.json'
                       };
+                      anim = bodymovin.loadAnimation(animData);
+
                   </script> 
 	</body>
 </html>
